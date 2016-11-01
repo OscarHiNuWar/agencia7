@@ -1,0 +1,1665 @@
+/*Fonts		*/
+	
+@font-face {
+    font-family: 'clearsansthin';
+    src: url('../font/clearsans/clearsans-thin.woff') format('woff2'),
+         url('../font/clearsans/clearsans-thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'clearsansmedium';
+    src: url('../font/clearsans/clearsans-medium.woff') format('woff2'),
+         url('../font/clearsans/clearsans-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}	
+		
+
+/*			*/		
+
+		body{
+			font-family: 'clearsansthin';
+			overflow-x: hidden;
+			text-rendering: optimizeLegibility;
+			
+		}
+		
+		#text37{
+			padding-top: 30px;
+			font-size: 20px;
+		}
+		
+		h1{
+			font-family: 'clearsansthin';
+			font-weight:normal;
+			font-size:38px;
+			
+			}
+		
+
+		#cont_header{
+			padding:14px 0 14px 0;  
+			background: #e4e5e5;
+			border-bottom: 3px solid #0889d1;
+		}
+		
+		#cont_header_text{
+			font-family: 'clearsansthin';
+			margin: auto; 
+			/*width: 55%;*/
+			text-align: center;
+			font-size: 19px;
+		}
+		
+		#pad-left{
+			padding-left: 1%;
+		}
+		
+		#pad-right{
+			padding-right: 1%;
+		}
+		
+		.linea-header{
+			border-left: 1px solid; 
+			width: 1px; 
+			height: 1px;
+			/*margin-left: 8px;*/
+			margin: 0 12px 0 7px;
+		}
+		
+		#text-medio{
+			margin:auto; 
+			width: 43%; 
+			margin-top: 30px;
+			font-size: 40px;
+			/*font-weight: bold;*/
+		}
+		
+		#text-medio-inicio{
+			   /* margin: auto;
+				width: 43%;*/
+				margin-top: 10px;
+				margin-bottom: 0px;
+				font-size: 30px;
+				text-align: center;
+		}
+		
+		#text-medio-final{
+			/*margin: auto;
+			width: 46%;*/
+			margin-top: 0px;
+			margin-bottom: 40px;
+			font-size: 30px;
+			text-align: center;
+		
+		}
+		
+		.menu{
+			/*float: left;
+			margin-right: 25px;*/
+			/*width: 70px;*/
+			font-family: 'clearsansthin';
+			cursor: pointer;
+			font-size: 1.3em;
+			list-style-type: none; 
+			display: inline-block;
+			margin-right: 1%;
+		}
+		
+		.header-boton{
+			padding: 2px; 
+			padding-left: 15px; 
+			padding-right: 12px; 
+			background-color: #0889d1; 
+			border-radius: 16px; 
+			color: white; 
+			margin-left: 8px;
+			cursor: pointer;
+			margin-right: 4px;
+		}
+		
+		.linea{
+			border-left: 1px solid;
+			width: 1px;
+			height: 20px;
+			float: right;
+		}
+		
+		.cont_desarrollo{
+			/*background: #0f8acd;*/
+			/**/
+			/*width: 24.4%;*/
+			width: 24.8%;
+			float: left;
+			/*margin-right: 5px;*/
+			/**/    height: 555px;
+			color: white;
+			font-family: 'clearsansthin';
+			font-weight:100;
+			/*background-image: url("../images/pantalla.jpg");*/
+
+		}
+		
+		
+		#dvSrvRedes{
+			width: 25%;
+			height: 555px;	
+			position: absolute;
+			left: 0;
+			/*background: url("../images/centrales.jpg") no-repeat;*/
+			overflow: hidden;
+			background: rgba(8,138,209,1);
+
+		}
+		
+		#dvSrvRedes2{
+			width: 25%;
+			height: 555px;	
+			position: absolute;
+			left: 25%;
+			/*background: url("../images/centrales.jpg") no-repeat;*/
+			overflow: hidden;
+			background: rgba(53,159,253,1);
+
+		}
+		
+		#dvSrvRedes3{
+			width: 25%;
+			height: 555px;	
+			position: absolute;
+			left: 50%;
+			/*background: url("../images/centrales.jpg") no-repeat;*/
+			overflow: hidden;
+			background: rgba(61,161,204,1);
+
+		}
+		
+		#dvSrvRedes4{
+			width: 25%;
+			height: 555px;	
+			position: absolute;
+			left: 75%;
+			/*background: url("../images/centrales.jpg") no-repeat;*/
+			overflow: hidden;
+			background: rgba(94,194,227,1);
+
+		}
+		
+		.smoke{
+
+		opacity: 0.3;
+		transition: visibility 0s 2s, opacity 0s linear;
+		}
+	
+	.ajust{
+		padding: 0px ; 
+		width: 47.8% ; 
+		padding-top: 40px ; 
+		padding-bottom: 30px ;
+		text-align: center;
+		color: white;
+		height: 50px;
+		background: #0889d1;
+		margin: auto;
+	}
+	
+	
+	.smoke2{
+		/*background-color: black;*/
+		background-image: url("../images/pantalla2.jpg");
+		background-size: cover;
+		opacity: 0.3;
+		transition: visibility 0s 2s, opacity 0s linear;
+	}
+	
+	.media-texto-general{
+		/*margin-left: 10%;*/
+	}
+	
+	.smoke3{
+		/*background-color: black;*/
+		background-image: url("../images/pantalla3.jpg");
+		background-size: cover;
+		opacity: 0.3;
+		transition: visibility 0s 2s, opacity 0s linear;
+	}
+	
+	#dvImagenRedes{
+				width: 100%;
+				height: 100%;	
+				position: absolute;
+				right: 0;
+				background: url("../images/meh.jpg") no-repeat;
+				background-size:cover;
+				transition: all 1.2s;
+				opacity: 0.3;
+
+			}
+			
+	#dvImagenRedes2{
+				width: 100%;
+				height: 100%;	
+				position: absolute;
+				right: 0;
+				background: url("../images/meh2.jpg") no-repeat;
+				background-size:cover;
+				transition: all 1.2s;
+				opacity: 0.3;
+
+			}
+
+#dvImagenRedes3{
+				width: 100%;
+				height: 100%;	
+				position: absolute;
+				right: 0;
+				background: url("../images/meh3.jpg") no-repeat;
+				background-size:cover;
+				transition: all 1.2s;
+				opacity: 0.3;
+
+			}		
+
+#dvImagenRedes4{
+				width: 100%;
+				height: 100%;	
+				position: absolute;
+				right: 0;
+				background: url("../images/meh4.jpg") no-repeat;
+				background-size:cover;
+				transition: all 1.2s;
+				opacity: 0.3;
+
+			}	
+
+			#menu_cont{
+				width: 100%;
+				height: 106px;
+				/*font-size: 1.3em;*/
+			}			
+		
+		.meh{
+			background-image: url("../images/meh.jpg");
+		}
+		
+		#cont_menu{
+			width: 75%; 
+			margin: auto; 
+			/*padding-top: 10px;*/
+		}
+		
+		.titulo{
+			margin: auto;
+			width: 23%;
+		}
+		
+		.desarrollo{
+			width: 60%;
+			margin: auto;
+			margin-top: 10px;
+			margin-bottom: 30px;
+			text-align: center;
+			font-size: 17px;
+		}
+		
+		.vermas-button{ 
+				  font-family: 'clearsansmedium';
+    background-color: #0889d1;
+    padding: 5px 0 9px 0;
+    border-radius: 25px;
+    color: white;
+    width: 56%;
+    border: 2px solid;
+    cursor: pointer;
+    position: absolute;
+    top: 320px;
+    right: 9%;
+    text-align: center;
+    font-size: 20px;
+				
+		}
+		
+		#cont_banner{
+		width: 100%;
+		float: left;
+		/*height: 83%;*/
+		
+		}
+		
+		#cont_banner h2{
+			font-size:1.9em;
+			margin:0;}
+		
+		#caja_menu{
+			float: left;
+			position: absolute;
+			z-index: 99;
+			padding-left: 4%;
+		}
+		
+		#caja_opciones{
+			/*float: left;*/
+			/*margin-left: 240px;*/
+			/*font-size: 1.3em;*/
+			/**/width: 100%;
+			padding: 20px;
+			position: absolute;
+			left: 30%;
+		}
+		
+		.vermas-button:hover{
+			background: #59c7ff;
+		}
+		
+		.cointainer_logo_redes{
+			    position: absolute;
+				width: 100%;
+				top: 165px;
+		
+		}
+		
+		
+		#icono-desarrollo{
+			margin: auto;
+			width: 17%;
+			/*margin-top: 60px;*/
+			margin-bottom: 20px;
+		}
+		
+		#cont_extrategia{
+			width: 100%;
+			float: left;
+			border-bottom: 1px solid #e3e3e3;
+		
+		}
+		
+		.cont_block_principal{
+			width: 50%;
+			float: left;
+			font-size: 26px;
+			/*border-top: 1px solid #e3e3e3;*/
+			/*height: 245px;*/
+		}
+		
+		.cont_block_principal2{
+			width: 50%;
+			float: left;
+			font-size: 26px;
+			/*border-top: 1px solid #e3e3e3;*/
+		}
+		
+		.dark_block{
+			
+			background: #0889d1;
+			width: 49.5%;
+			padding: 40px;
+			padding-left: 0px;
+			padding-right: 0px;
+			float: left;
+			text-align: center;
+			border: 1px solid white;
+			color: white;
+			height: 50px;
+		}
+		
+		.light_block{
+			
+			background: #0ca2ee;
+			margin: auto;
+			width: 49.5%;
+			padding: 40px;
+			padding-left: 0px;
+			padding-right: 0px;
+			float: left;
+			text-align: center;
+			border: 1px solid white;
+			color: white;
+			height: 50px;
+		}
+		
+		#barra-blanca{
+			margin: auto;  
+			float: left; 
+			width: 100%;
+			border-bottom: 1px solid #e3e3e3;
+			height: 250px;
+		}
+		
+		.bluefog{
+			width: 100%;
+			height: /*534px*/460px;
+			position: absolute;
+			background: rgba(8,138,209,0.5);
+		
+		}
+		
+		.cont_imgs{
+			position: absolute;
+			width: 100%;
+		}
+		
+		#barra-azul{
+			height: 156px;
+			margin: auto;
+			background: #088ad1;
+			float: left;
+			width: 100%;
+			color: white;
+			
+		}
+		
+		#cont_sabemos{
+			/*margin: auto;
+			width: 51%;*/
+			margin-top: 55px;
+			font-size: 26px;
+			text-align: center;
+			
+		}
+		
+		.titulo_general{
+			width: 80%;
+			margin: auto;
+			margin-top: 50px;
+		}
+		
+		#fomtext{
+			width: 70%;
+			font-size: 18px;
+			margin-bottom: 15px;
+			margin-left: 15%;
+		}
+		
+		.texto_general{
+			width: 85%;
+			margin: auto;
+			margin-left: 10%;
+			margin-bottom: 21px;
+		}
+		
+		.texto_datos{
+			width: 70%;
+			/*margin: auto;*/
+			margin-top: 10px;
+			font-size: 18px;
+			margin-bottom: 3%;
+		}
+		
+		.round-input{
+			padding: 8px;
+			background-color: #ffffff;
+			border-radius: 16px;
+			width: 30%;
+			border: 1px solid black;
+			text-align: center;
+		}
+		
+		.cont_proyectos{
+			float: left;
+			width: 100%;
+			border-bottom: 1px solid #e3e3e3;
+			height: /*534px*/460px;
+		}
+		
+		#backit{
+			background-image: url("../images/members.jpg");
+			background-size: cover;
+			width: 100%;
+			filter: blur(20px);
+			position: absolute;
+			height: /*534px*/460px;
+			overflow: hidden;
+		
+		}
+		
+		.tope{
+			top: /*403px*/345px;
+		}
+		
+		.cont_mini_proy{
+			width: 80%;
+			position: absolute;
+			/*margin: auto;
+			margin-top: 50px;*/
+		}
+		
+		.proyect{
+			width: 25%;
+			float: left;
+		}
+		
+		.proyectos-button{
+			width: 30%;
+			text-align: center;
+			border: 3px solid;
+			border-radius: 30px;
+			padding: 8px;
+			left: 45%;
+			position: absolute;
+			cursor: pointer;
+			background: #0889d1;
+			color: white;
+			font-size: 24px;
+		}
+		
+		.noinput{
+			padding: 15px;
+			width: 45%;
+			margin: 5px;
+		}
+		
+		
+		.cont_contact{
+			width: 50%;
+			float: left;
+			/*margin-bottom: 20px;*/
+			height: 405px;
+		}
+		
+		.contact_cont{
+			margin-top: 35px;
+		}
+		
+		.boton-enviar{
+			padding: 8px;
+			background-color: #0889d1;
+			border-radius: 25px;
+			color: white;
+			border: 0px;
+			width: 35%;
+			text-align: center;
+			margin-top: 10px;
+			font-size: 21px;
+			cursor: pointer;
+		}
+		
+		#cont_cont_right{
+			margin: 35px;
+			margin-top: 60px;
+		}
+		
+		.ajuste_cont_right{
+			    width: 30%;
+				/*margin-left: 9%;*/
+				/*margin-top: 7%;*/
+				margin-bottom: 4%;
+		}
+		
+		.cont_footer{
+			width: 100%;
+			float: left;
+			background: #0889d1;
+			color: white;
+		}
+		
+		.footer_text_primero{
+			margin: auto;
+			width: 42%;
+			margin-top: 25px;
+			margin-bottom: 20px;
+			text-align: center;
+			font-size: 20px;
+		}
+		
+		.footer_text_segundo{
+		    margin: auto;
+			width: 26%;
+			margin-top: 10px;
+			margin-bottom: 0px;
+		}
+		
+		.mark{
+			width: 41%; 
+			text-align: center;
+		}
+		
+		.ajust-form{
+			font-size: 32px;
+			margin-left: 15%;
+			margin-bottom: 15px;
+		}
+		
+		.boton{
+			display: none;
+		}
+		
+		.mah{
+			width: 18%;
+		}
+		
+		.protocol1{
+			left: 190px; 
+			top: 105px; 
+			margin: 0px;
+		}
+		
+		.protocol2{
+			left: 190px; 
+			top: 214px;
+		}
+		
+		#forme{
+			width: 70%;
+			margin: auto;
+		}
+		
+		.footer-ajuste{
+			width: 56%; 
+			margin-top: 20px; 
+			/*margin-left: 10%; */
+			font-weight: bold;
+		
+		}
+		
+		#creamos{
+			width: 92%;
+		}
+		
+		#megusta{
+			width: 72%;  
+			margin-right: auto;
+			margin-bottom: 15px;
+		}
+
+/********************/
+@media screen and (max-width: 1110px), screen and (max-device-width: 1110px)  {
+		
+		#caja_menu{
+			padding-left: 0px;
+			left: 50px;
+		}
+		
+		#caja_opciones{
+		    left: 23%;
+		}
+		
+		.cont_block_principal2{
+			padding-top: 6%;
+		}
+		
+		#creamos, #megusta{
+			font-size: 20px;
+		}
+		
+		.texto_general{
+			font-size: 18px;
+		}
+		
+		.dark_block{
+			width: 49%;
+		}
+		
+		.light_block{
+			width: 49%;
+		}
+		
+		.protocol1, .protocol2{
+			left: 60px;
+		}
+		
+		.cont_mini_proy{
+		    width: 93%;
+		}
+		
+		.proyectos-button{
+			width: 35%;
+			padding: 5px;
+			left: 40%;
+		}
+		
+		.ajuste_cont_right{
+		    width: 45%;
+		}
+		
+		.boton-enviar{
+			width: 40%;
+		}
+		
+		.footer_text_primero{
+			width: 60%;
+		}
+		
+		
+}
+
+@media screen and (max-width : 640px) and (orientation: landscape)  {
+	.dark_block, .light_block{
+		height: 56px;
+		padding-top: 34px;
+		width: 39.5%;
+	}
+	
+	.ajust{
+		width: 316px;
+	}
+
+}
+
+@media screen and (max-width : 360px) and (mix-width : 359px) and(orientation: portrait)  {
+	.dark_block, .light_block{
+		/*height: 56px;
+		padding-top: 34px;*/
+		width: 32% !important;
+	}
+	
+	/*.ajust{
+		width: 316px;
+	}*/
+
+}
+
+@media screen and (max-width : 768px) and (orientation: landscape)  {
+		
+		body{
+			overflow-x: hidden;
+		}
+		
+		#cont_header_text{
+			width: 84%;
+			font-size: 11px;
+		}
+		
+		#cont_menu{
+			width: 90%;
+			padding-top: 0px;
+		}
+		
+		#caja_opciones{
+			display: none;
+		}
+		
+		#raya{
+			background-color: #006df0;
+			width: 52px;
+			height: 9px;
+		}
+
+		#blanco{
+			background-color: white;
+			width: 52px;
+			height: 3px;
+		}
+		
+		.boton{
+			display: block;
+			width: 52px;
+			height: 35px;
+			margin-left: 470px;
+			padding-top: 30px;/**/
+			cursor: pointer;
+		}
+		
+		.cont_desarrollo{
+			height: 1000px;
+			padding-bottom: 60px;
+		}
+		
+		#icono-desarrollo{
+		    width: 10%;
+			margin-bottom: 10px;
+		}
+		
+		.mark{
+			width: 22% !important;
+		}
+		
+		
+		
+		.cointainer_logo_redes{
+		    top: 20px;
+		}
+		
+		.titulo{
+			width: 12%;
+		}
+		
+		.vermas-button{
+			width: 100px;
+			top: 180px;
+			text-align: center;
+			left: 72%;
+		}
+		
+		#dvSrvRedes{
+			width: 100%;
+			height: 256px;
+		}
+		
+		#dvSrvRedes2{
+			width: 100%;
+			height: 400px;
+			left: 0;
+			top: 400px;
+		}
+		
+		#dvSrvRedes3{
+			width: 100%;
+			height: 265px;
+			left: 0;
+			top: 672px;
+		}
+		
+		#dvSrvRedes4{
+			width: 100%;
+			height: 269px;
+			left: 0;
+			top: 936px;
+		}
+		
+		.media-mark{
+			width: 20% !important;
+		}
+		
+		#cont_sabemos{
+			/*width: 64%;*/
+			text-align: center;
+			font-size: 20px;
+			margin-top: 44px;
+		}
+		
+		#text-medio{
+			width: 80%;
+		}
+		
+		#text-medio-inicio{
+		    /*width: 80%;*/
+			text-align: center;
+		}
+		
+		#text-medio-final{
+			/*width: 84%;*/
+			text-align: center;
+		}
+		
+		.cont_block_principal{
+		    width: 100%;
+		}
+		
+		.cont_block_principal2{
+			width: 100%;
+			height: 260px;
+		}
+		
+		.cont_proyectos{
+			height: 380px;
+		}
+		
+		.bluefog{
+			height: 380px;
+		}
+		
+		.tope{
+			top: 300px;
+		}
+		
+		.media-cont-contact{
+			height: 320px;
+		}
+		
+		.dark_block {
+			height: 56px;
+			padding-top: 34px;
+			width: 49.5%;
+		}
+		
+		.light_block {
+			padding-top: 35px;
+			height: 55px;
+			width: 49.5%;
+		}
+		
+		.ajust-form{
+		    margin-left: 10%;
+		}
+		
+		.ajust{
+		    width: 340px;
+		}
+		
+		.cont_mini_proy{
+			width: 90%;
+		}
+		
+		.proyectos-button{
+			width: 36%;
+			left: 230px;
+		}
+		
+		.protocol1{
+			left: 40px;
+			top: 70px;
+			margin: 0px;
+		}
+		
+		.protocol2{
+			left: 40px;
+			top: 180px;
+		}
+		
+		.cont_contact{
+			width: 100%;
+		}
+		
+		#forme{
+			width: 80%;
+			margin: auto;
+		}
+		
+		.footer_text_primero{
+			width: 80%;
+		}
+		
+		#fomtext{
+			width: 79%;
+		}
+}
+
+@media screen and (max-width : 570px) and (orientation: landscape)  {
+		
+		body{
+			overflow-x: hidden;
+		}
+		
+		#cont_header_text{
+			width: 95%;
+			font-size: 11px;
+		}
+		
+		#cont_menu{
+			width: 90%;
+		}
+		
+		#caja_opciones{
+			display: none;
+		}
+		
+		#raya{
+			background-color: #006df0;
+			width: 52px;
+			height: 9px;
+		}
+
+		#blanco{
+			background-color: white;
+			width: 52px;
+			height: 3px;
+		}
+		
+		.boton{
+			display: block;
+			width: 52px;
+			height: 35px;
+			margin-left: 400px;
+			padding-top: 13px;/**/
+			cursor: pointer;
+		}
+		
+		.cont_desarrollo{
+			height: 900px;
+		}
+		
+		#icono-desarrollo{
+		    width: 10%;
+			margin-bottom: 10px;
+		}
+		
+		#dvSrvRedes{
+			width: 100%;
+			height: 210px;
+		}
+		
+		.cointainer_logo_redes{
+		    top: 20px;
+		}
+		
+		.titulo{
+			width: 23%;
+		}
+		
+		.vermas-button{
+			width: 70px;
+			top: 150px;
+			right: 0px;
+			text-align: center;
+		}
+		
+		#dvSrvRedes2{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 333px;
+		}
+		
+		#dvSrvRedes3{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 563px;
+		}
+		
+		#dvSrvRedes4{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 793px;
+		}
+		
+		.media-mark{
+			width: 22% !important;
+		}
+		
+		#cont_sabemos{
+			width: 84%;
+			font-size: 20px;
+			margin-top: 38px;
+		}
+		
+		#text-medio{
+			width: 88%;
+			font-size: 35px;
+		}
+		
+		#text-medio-inicio{
+		    width: 89%;
+			font-size: 22px;
+		}
+		
+		#text-medio-final{
+			width: 95%;
+			font-size: 22px;
+		}
+		
+		.cont_block_principal{
+		    width: 100%;
+		}
+		
+		.cont_block_principal2{
+			width: 100%;
+			height: 210px;
+		}
+		
+		.dark_block {
+			height: 56px;
+			padding-top: 34px;
+			width: 221px;
+		}
+		
+		.light_block {
+			padding-top: 35px;
+			height: 55px;
+			width: 221px;
+		}
+		
+		.ajust{
+		    width: 281px;
+		}
+		
+		.cont_mini_proy{
+			width: 96%;
+		}
+		
+		.proyectos-button{
+			width: 36%;
+			left: 180px;
+		}
+		
+		.protocol1{
+			left: 8px;
+			top: 70px;
+			margin: 0px;
+		}
+		
+		.protocol2{
+			left: 8px;
+			top: 180px;
+		}
+		
+		.cont_contact{
+			width: 100%;
+		}
+		
+		#forme{
+			width: 81%;
+			margin: auto;
+		}
+		
+		.footer_text_primero{
+			width: 90%;
+		}
+}
+
+@media screen and (max-width : 414px) and (orientation: portrait)  {
+		
+		body{
+			overflow-x: hidden;
+		}
+		
+		.desarrollo{
+		    width: 100%;
+		}
+		
+		#media-little{
+			width: 76%;
+		}
+		
+		.media-ico{
+			width: 66%;
+		}
+		
+		#cont_header{
+			padding: 20px;
+			padding-bottom: 20px;
+		}
+		
+		#cont_header_text{
+			width: 95%;
+			font-size: 11px;
+		}
+		
+		#cont_menu{
+			width: 98%;
+		}
+		
+		#caja_opciones{
+			display: none;
+		}
+		
+		#raya{
+			background-color: #006df0;
+			width: 52px;
+			height: 9px;
+		}
+
+		#blanco{
+			background-color: white;
+			width: 52px;
+			height: 3px;
+		}
+		
+		.boton{
+			display: block;
+			width: 52px;
+			height: 35px;
+			margin-left: 265px;
+			padding-top: 30px;/**/
+			cursor: pointer;
+		}
+		
+		.cont_desarrollo{
+			height: 904px;
+		}
+		
+		#icono-desarrollo{
+		    width: 10%;
+			margin-bottom: 10px;
+		}
+		
+		#barra-azul{
+			height: 78px;
+		}
+
+		.cointainer_logo_redes{
+		    top: 20px;
+		}
+		
+		.titulo{
+			width: 23%;
+		}
+		
+		.vermas-button{
+			display: none;
+			width: 70px;
+			top: 150px;
+			right: 0px;
+			text-align: center;
+		}
+		
+		#dvSrvRedes{
+			width: 100%;
+			height: 220px;
+		}
+		
+		#dvSrvRedes2{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 400px;
+		}
+		
+		#dvSrvRedes3{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 630px;
+		}
+		
+		#dvSrvRedes4{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 860px;
+		}
+		
+		.media-mark{
+			width: 34% !important;
+		}
+		
+		#cont_sabemos{
+			/*width: 65%;*/
+			font-size: 15px;
+			margin-top: 20px;
+		}
+		
+		#text-medio{
+			width: 88%;
+			font-size: 20px;
+		}
+		
+		#text-medio-inicio{
+		    /*width: 82%;*/
+			font-size: 14px;
+		}
+		
+		#text-medio-final{
+			/*width: 85%;*/
+			font-size: 14px;
+		}
+		
+		.cont_block_principal{
+		    width: 100%;
+			height: 214px;
+		}
+		
+		.cont_block_principal2{
+			width: 100%;
+			height: 340px;
+		}
+		
+		.dark_block {
+			height: 55px !important;
+			padding-top: 20px !important;
+			width: 49%;
+			font-size: 20px;
+			word-wrap: break-word;
+		}
+		
+		.texto_general{
+			width: 100%;
+			text-align: center;
+		}
+		
+		#creamos{
+			width: 100%;
+		}
+		
+		#megusta{
+			width: 100%;  
+			margin-right: auto;
+		}
+		
+		.light_block {
+			height: 54px;
+			padding-top: 21px;
+			width: 49%;
+			font-size: 20px;
+			word-wrap: break-word;
+		}
+		
+		.ajust{
+		    width: 49%;
+			font-size: 20px;
+			padding-top: 26px;
+		}
+
+		.cont_mini_proy{
+			width: 96%;
+		}
+		
+		.proyect{
+			width: 50%;
+		}
+		
+		#tres, #cuatro, #cinco, #seis{
+			display: none;
+		}
+		
+		.round-input{
+			width: 60%;
+			margin-left: 55px;
+		}
+		
+		.tope{
+			top: 290px;
+		}
+		
+		.cont_proyectos{
+		    height: 390px;
+		}
+		
+		.bluefog{
+			height: 390px;
+		}
+		
+		.proyectos-button{
+			width: 60%;
+			left: 80px;
+		}
+		
+		.titulo_general{
+			width: 90%;
+			margin-left: 8%;
+		}
+
+		.protocol1{
+			left: 22px;
+			top: 40px;
+			margin: 0px;
+		}
+		
+		.protocol2{
+			left: 15px;
+			top: 130px;
+		}
+		
+		.cont_contact{
+			width: 100%;
+		}
+		
+		.ajuste_cont_right{
+			width: 39%;
+		}
+		
+		#forme{
+			width: 89%;
+			margin: auto;
+		}
+		
+		#fomtext{
+		    width: 90%;
+		}
+		
+		#otro-text{
+			width: 86%;
+		}
+		
+		.footer_text_primero{
+			width: 95%;
+		}
+		
+		.cont_contact{
+			height: 342px;
+		}
+		
+		.footer-ajuste{
+			margin-left: 0%;
+		}
+		
+		.media-texto-general{
+			margin-left: 0% !important;
+		}
+}
+
+@media screen and (max-width : 320px) and (orientation: portrait)  {
+		
+		body{
+			overflow-x: hidden;
+		}
+		
+		#media-little{
+			width: 60%;
+		}
+		
+		.media-ico{
+			width: 100%;
+		}
+		
+		#cont_header{
+			padding: 20px;
+			padding-bottom: 20px;
+		}
+		
+		#cont_header_text{
+			width: 95%;
+			font-size: 11px;
+		}
+		
+		#cont_menu{
+			width: 98%;
+		}
+		
+		#caja_opciones{
+			display: none;
+		}
+		
+		#raya{
+			background-color: #006df0;
+			width: 52px;
+			height: 9px;
+		}
+
+		#blanco{
+			background-color: white;
+			width: 52px;
+			height: 3px;
+		}
+		
+		.boton{
+			display: block;
+			width: 52px;
+			height: 35px;
+			margin-left: 240px;
+			padding-top: 25px;/**/
+			cursor: pointer;
+		}
+		
+		.cont_desarrollo{
+			height: 900px;
+		}
+		
+		#icono-desarrollo{
+		    width: 10%;
+			margin-bottom: 10px;
+		}
+		
+		#barra-azul{
+			height: 78px;
+		}
+
+		.cointainer_logo_redes{
+		    top: 20px;
+		}
+		
+		.titulo{
+			width: 23%;
+		}
+		
+		.vermas-button{
+			width: 70px;
+			top: 150px;
+			right: 0px;
+			text-align: center;
+		}
+		
+		#dvSrvRedes{
+			width: 100%;
+			height: 220px;
+		}
+		
+		#dvSrvRedes2{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 396px;
+		}
+		
+		#dvSrvRedes3{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 625px;
+		}
+		
+		#dvSrvRedes4{
+			width: 100%;
+			height: 230px;
+			left: 0;
+			top: 852px;
+		}
+		
+		.media-mark{
+			width: 22% !important;
+		}
+		
+		#cont_sabemos{
+			/*width: 65%;*/
+			text-align: center;
+			font-size: 15px;
+			margin-top: 20px;
+		}
+		
+		#text-medio{
+			width: 88%;
+			font-size: 20px;
+		}
+		
+		#text-medio-inicio{
+		    /*width: 82%;*/
+			text-align: center;
+			font-size: 13px;
+		}
+		
+		#text-medio-final{
+			/*width: 85%;*/
+			text-align: center;
+			font-size: 13px;
+		}
+		
+		.cont_block_principal{
+		    width: 100%;
+			height: 213px;
+		}
+		
+		.cont_block_principal2{
+			width: 100%;
+			height: 390px;
+		}
+		
+		.texto_general{
+			width: 92%;
+		}
+		
+		.dark_block {
+			height: 55px !important;
+			padding-top: 20px !important;
+			width: 49%;
+			font-size: 20px;
+			word-wrap: break-word;
+		}
+		
+		.light_block {
+			height: 54px;
+			padding-top: 21px;
+			width: 49%;
+			font-size: 20px;
+			word-wrap: break-word;
+		}
+		
+		.ajust{
+		    width: 49%;
+			font-size: 20px;
+			padding-top: 26px;
+		}
+		
+		.ajust-form{
+			width: 100%;
+			font-size: 28px;
+		}
+		
+		.cont_mini_proy{
+			width: 100%;
+		}
+		
+		.proyect{
+			width: 50%;
+		}
+		
+		#tres, #cuatro, #cinco, #seis{
+			display: none;
+		}
+		
+		.round-input{
+			width: 60%;
+		}
+		
+		.proyectos-button{
+			width: 70%;
+			left: 50px;
+		}
+		
+		.titulo_general{
+			width: 90%;
+			margin-left: 15px;
+		}
+
+		.protocol1{
+			left: 8px;
+			top: 70px;
+			margin: 0px;
+		}
+		
+		.protocol2{
+			left: 0px;
+			top: 180px;
+		}
+		
+		.cont_contact{
+			width: 100%;
+			height: 430px;
+		}
+		
+		.ajuste_cont_right{
+			width: 57%;
+			margin-left: 5%;
+		}
+		
+		#forme{
+			width: 89%;
+			margin: auto;
+		}
+		
+		#fomtext{
+		    width: 90%;
+		}
+		
+		#otro-text{
+			width: 86%;
+			margin-left: 7%;
+		}
+		
+		.footer_text_primero{
+			width: 95%;
+		}
+		
+		.cont_contact{
+			height: 342px;
+		}
+		
+		.footer-ajuste{
+			margin-left: 8%;
+		}
+		
+		.media-texto-general{
+			margin-left: 8% !important;
+		}
+		
+		.media-cont-contact{
+			height: 272px !important;
+		}
+		
+		.mark{
+			width: 42% !important;
+		}
+}
+
